@@ -6,6 +6,9 @@ body {
     align-items: stretch;
 }
 
+a:visited {
+    color: #e5e7eb;
+}
 /*
 .header, .description, .facts, .quotes, .buy, .footer {
     flex: 1 1 auto;
