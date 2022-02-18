@@ -1,25 +1,20 @@
 body {
     display: flex;
     flex-direction: column;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0px;
+    justify-content: stretch;
     align-items: stretch;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-a:visited {
-    color: #e5e7eb;
+.header, .footer {
+    align-self: stretch;
+    margin-left: -8px;
+    margin-right: -18px;
 }
-/*
-.header, .description, .facts, .quotes, .buy, .footer {
-    flex: 1 1 auto;
-}
-*/
 
-.info > img {
-    height: 250px;
-    width: 300px;
-    margin: 8px;
-    border-radius: 25px;
+.header {
+    margin-bottom: -18px;
+    margin-top: -26px;
 }
 
 ul {
@@ -33,34 +28,33 @@ ul {
     padding: 10px;
 }
 
-a {
-    text-decoration: none;
-    margin: 10px;
-    color: #e5e7eb;
-}
-
 .push {
     margin-left: auto;
 }
+
 .logo {
     font-size: 34px;
     margin: 20px;
 }
 
-.header {
-    height: 55px;
-    margin-top:-30px;
-    margin-bottom: 21px;
+.footer {
+    background-color: #1f2937;
+    color: #f9faf8;
+    justify-content: center;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: -8px;
 }
 
 .description {
     background-color: #1f2937;
     padding: 24px;
-    margin: 0px;
+    margin-left: -8px;
+    margin-right: -18px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 }
 
 .description > h1 {
@@ -84,25 +78,30 @@ a {
     font-weight: bolder;
 }
 
-.product > img {
-    height: auto;
-    width: 500px;
-}
-
 .facts {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .info {
     padding: 24px;
 }
+
+.info > img {
+    height: 250px;
+    width: 300px;
+    margin: 8px;
+    border-radius: 25px;
+}
+
 .quotes {
     background-color: #e5e7eb;
     font-size: 36px;
     font-style: italic;
     color: #1f2937;
     padding: 8px 350px;
+    margin-left: -8px;
+    margin-right: -18px;
 
 }
 
@@ -136,7 +135,6 @@ a {
     justify-content: space-around;
 }
 
-
 button {
     background-color: #3882f6;
     color: #f9faf8;
@@ -147,11 +145,17 @@ button {
     border-style: solid;
 }
 
-.footer {
-    background-color: #1f2937;
-    color: #f9faf8;
-    justify-content: center;
-    height: 50px;
-    display: flex;
-    align-items: center;
+.product > img {
+    height: auto;
+    width: 500px;
+}
+
+a {
+    text-decoration: none;
+    margin: 10px;
+    color: #e5e7eb;
+}
+
+a:visited {
+    color: #e5e7eb;
 }
